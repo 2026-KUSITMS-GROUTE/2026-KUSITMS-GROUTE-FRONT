@@ -50,11 +50,6 @@ jobs:
               }
             }
 
-      - name: Checkout dev code
-        uses: actions/checkout@v4
-        with:
-          ref: dev
-
       - name: Create branch with Ticket number
         run: |
           TICKET="${{ steps.create.outputs.issue }}"
@@ -78,4 +73,4 @@ jobs:
           actions: "create-comment"
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
-          body: "Jira Issue Created: [${{ steps.create.outputs.issue }}](${{ secrets.JIRA_BASE_URL }}/browse/${{ steps.create.outputs.issue }})\nCreated branch: ${{ steps.create.outputs.issue }}-${{ steps.issue-parser.outputs.issueparser_branch }}"
+          body: "Jira Issue Created: [${{ steps.create.outputs.issue }}](${{ secrets.JIRA_BASE_URL }}/browse/${{ steps.create.outputs.issue }})\nCreated branch: ${{ steps.issue-parser.outputs.issueparser_branchType }}/#${{ steps.create.outputs.issue }}-${{ steps.issue-parser.outputs.issueparser_branch }}"
