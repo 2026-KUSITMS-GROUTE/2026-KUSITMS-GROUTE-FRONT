@@ -63,6 +63,7 @@ jobs:
           BRANCH_NAME="${TYPE}/#${TICKET}-${WORK}"
           git checkout -b "${BRANCH_NAME}"
           git push origin "${BRANCH_NAME}"
+          echo "Created branch: ${BRANCH_NAME}"
 
       - name: Update issue title
         uses: actions-cool/issues-helper@v3
