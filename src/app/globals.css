@@ -1,1 +1,159 @@
 @import "tailwindcss";
+
+/* Tailwind 디자인 시스템 토큰 */
+@theme inline {
+  --font-sans:
+    "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+
+  /* Warm-yellow */
+  --color-yellow-100: #fff9e9;
+  --color-yellow-200: #fff3cd;
+  --color-yellow-300: #ffe492;
+  --color-yellow-400: #ffce3b;
+  --color-yellow-500: #ffc022;
+  --color-yellow-600: #ffa812;
+  --color-yellow-700: #f48a00;
+  --color-yellow-800: #bf6c00;
+  --color-yellow-900: #6b3d01;
+
+  /* Blue(true) */
+  --color-blue-100: #edeeff;
+  --color-blue-200: #dbddff;
+  --color-blue-300: #c5c8ff;
+  --color-blue-400: #9398f9;
+  --color-blue-500: #4951fa;
+  --color-blue-600: #373dbc;
+  --color-blue-700: #2c3196;
+  --color-blue-800: #212470;
+  --color-blue-900: #1a1c58;
+
+  /* Off-white */
+  --color-offwhite-100: #fefefe;
+  --color-offwhite-200: #fefefd;
+  --color-offwhite-300: #fcfcfa;
+  --color-offwhite-400: #f5f5f0;
+  --color-offwhite-500: #ddddd8;
+  --color-offwhite-600: #c4c4c0;
+  --color-offwhite-700: #b8b8b4;
+  --color-offwhite-800: #939390;
+  --color-offwhite-900: #6e6e6c;
+
+  /* Gray */
+  --color-gray-100: #fbfbfb;
+  --color-gray-200: #f7f7f7;
+  --color-gray-300: #ececec;
+  --color-gray-400: #dddddd;
+  --color-gray-500: #bfbfbf;
+  --color-gray-600: #adadad;
+  --color-gray-700: #999999;
+  --color-gray-800: #505050;
+  --color-gray-900: #111111;
+
+  /* W&B */
+  --color-white: #ffffff;
+  --color-black: #111111;
+
+  /* Error */
+  --color-error: #e32727;
+
+  /* Radius */
+  --radius-0: 0px;
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+
+  /* Spacing */
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+
+  /* Icon Sizing */
+  --icon-16: 16px;
+  --icon-20: 20px;
+  --icon-24: 24px;
+  --icon-28: 28px;
+  --icon-32: 32px;
+  --icon-36: 36px;
+  --icon-44: 44px;
+}
+
+/* 타이포그래피 유틸리티 */
+@utility head-1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+@utility head-2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+@utility head-3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+@utility head-4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+@utility head-5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+@utility body-1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+@utility body-2 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+@utility body-3 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+
+@utility body-4 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+@utility caption {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
